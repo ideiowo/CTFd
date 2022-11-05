@@ -31,12 +31,16 @@
 </head>
 <body>
 	{% include "components/navbar.html" %}
-
-	<main role="main">
+	<div>
+	<img class="mybackground" src="https://i.imgur.com/O68aUYY.png">
+	</div>
+	<video class="video-back" autoplay loop muted>
+		<source src="/themes/core/static/img/firebackground.mp4" type="video/mp4">
+	</video>
+	<main role="main" class="maincontent">
 		{% block content %}
 		{% endblock %}
 	</main>
-
 	<footer class="footer">
 		<div class="container text-center">
 			<a href="https://ctfd.io" class="text-secondary">
